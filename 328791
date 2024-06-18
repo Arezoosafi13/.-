@@ -30,17 +30,3 @@ class Queue:
         if i < len(self.Q):
             return self.Q[i]
         return None
-    
-q=Queue(10) # (front of queue)[](back of queue)
-q.enqueue("ra'na") # ["ra'na"]
-q.enqueue("vez") # ["ra'na", "vez"]
-q.enqueue("Arya") # ["ra'na", "vez", "Arya"]
-print("queue size is: ",q.size())
-print(q.dequeue(), "left the queue") # ["vez", "Arya"]
-print("front of queue is:",q.front())
-q.enqueue("milda") # ["vez", "Arya", "milda"]
-print(q.get_element_at_index(1))
-q.dequeue() # ["Arya","milda"]
-q.dequeue() # ["milda"]
-q.dequeue() # []
-print("It was a queue")
